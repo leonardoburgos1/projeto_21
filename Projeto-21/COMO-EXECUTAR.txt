@@ -1,0 +1,18 @@
+COMO EXECUTAR O JOGO 21
+
+1. Instale o JDK 17 (não apenas o JRE).
+2. Instale o IntelliJ IDEA.
+3. Abra a pasta vinteum-main no IntelliJ (a pasta que contém pom.xml).
+4. Se aparecer uma pergunta sobre Maven, escolha Load/Trust Project.
+5. Aguarde o IntelliJ baixar as dependências. É necessário estar conectado à internet.
+6. Abra a aba Terminal na parte inferior do IntelliJ.
+7. Execute:
+
+   mvn clean javafx:run
+
+Se o comando mvn não for reconhecido no Windows, configure o Maven no IntelliJ ou instale o Maven. Depois tente novamente.
+
+IMPORTANTE:
+- O projeto usa JavaFX, não Spring Boot.
+- A classe principal é src/main/java/com/example/App.java.
+- Não execute PrimaryController.java. Execute o projeto pelo Maven com javafx:run.
